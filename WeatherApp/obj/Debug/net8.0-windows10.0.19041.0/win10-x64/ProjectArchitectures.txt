@@ -1,0 +1,1 @@
+D:\code\maui\WeatherApp\WeatherApp\WeatherApp.csproj;x64

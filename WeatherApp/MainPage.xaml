@@ -1,0 +1,110 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage"
+             WidthRequest="320"
+             HeightRequest="640">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="Placeholder" Value="Enter location"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="FontSize" Value="18"/>
+            </Style>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="Text" Value="Search"/>
+                <Setter Property="CornerRadius" Value="4" />
+                <Setter Property="Padding" Value="5, 0"/>
+                <Setter Property="FontSize" Value="12"/>
+                <Setter Property="BackgroundColor" Value="#2196F3"/>
+                <Setter Property="HeightRequest" Value="0" />
+                <Setter Property="TextColor" Value="White"/>
+            </Style>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="10"/>
+            </Style>
+            <Style x:Key="ImageStyle" TargetType="Image">
+                <Setter Property="Width" Value="30"/>
+                <Setter Property="Height" Value="30"/>
+                <Setter Property="Margin" Value="5,0"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="1,1">
+            <GradientStop Color="SkyBlue" Offset="0.1" />
+            <GradientStop Color="DeepSkyBlue" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout Margin="5">
+        <StackLayout Orientation="Horizontal">
+            <Entry Style="{StaticResource EntryStyle}" Text="{Binding CityEntry}" HorizontalOptions="FillAndExpand" TextChanged="CityEntry_Changed"/>
+            <Button Style="{StaticResource ButtonStyle}" Text="{Binding SearchBtnText}" Clicked="SearchButton_Clicked"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Now" HorizontalOptions="Center" FontSize="Medium"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Style="{StaticResource ImageStyle}" Source="{Binding WeatherIcon}" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Style="{StaticResource LabelStyle}" Text="{Binding Temperature}" />
+                <Image Style="{StaticResource ImageStyle}" Source="temperature.png" WidthRequest="30" HeightRequest="30" />
+                <Label Style="{StaticResource LabelStyle}" Text="{Binding Humidity}" />
+                <Image Style="{StaticResource ImageStyle}" Source="humidity.png" WidthRequest="30" HeightRequest="30" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Style="{StaticResource LabelStyle}" Text="{Binding SunriseTime}" />
+                <Image Style="{StaticResource ImageStyle}" Source="sunrise.png" WidthRequest="30" HeightRequest="30"  />
+                <Label Style="{StaticResource LabelStyle}" Text="{Binding SunsetTime}" />
+                <Image Style="{StaticResource ImageStyle}" Source="sunset.png" WidthRequest="30" HeightRequest="30"  />
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Forecast" HorizontalOptions="Center" FontSize="Medium" Margin="0,10,0,10"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="2" Margin="0,0,0,10">
+                <Button Text="Today" Style="{StaticResource ButtonStyle}" Clicked="ForecastDaySelect" CommandParameter="Today"/>
+                <Button Text="Tomorrow" Style="{StaticResource ButtonStyle}" Clicked="ForecastDaySelect" CommandParameter="Tomorrow"/>
+                <Button Text="{Binding TodayPlusTwo}" Style="{StaticResource ButtonStyle}" Clicked="ForecastDaySelect" CommandParameter="TodayPlusTwo"/>
+                <Button Text="{Binding TodayPlusThree}" Style="{StaticResource ButtonStyle}" Clicked="ForecastDaySelect" CommandParameter="TodayPlusThree"/>
+                <Button Text="{Binding TodayPlusFour}" Style="{StaticResource ButtonStyle}" Clicked="ForecastDaySelect" CommandParameter="TodayPlusFour"/>
+            </StackLayout>
+
+            <ListView ItemsSource="{Binding FilteredForecasts}">
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="Time" />
+                        <Label Grid.Column="1" Text="Temperature" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding DisplayTime}" />
+                                <Label Grid.Column="1" Text="{Binding DisplayTemp}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
