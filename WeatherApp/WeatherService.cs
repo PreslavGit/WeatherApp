@@ -1,4 +1,5 @@
-﻿using Microsoft.Maui.Controls;
+﻿using CommunityToolkit.Maui.Alerts;
+using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace WeatherApp
 {
     internal static class WeatherService
     {
-        private static string API_KEY = "17a1ba58af0d96c2e1ce2a110afa9af6";
+        private static string API_KEY = "";
         private static HttpClient http = new()
         {
             BaseAddress = new Uri("http://api.openweathermap.org"),
@@ -23,6 +24,8 @@ namespace WeatherApp
             var json = await (await http.GetAsync(route))
                 .EnsureSuccessStatusCode()
                 .Content.ReadAsStringAsync();
+
+            Toast.Make($"""Forecast Request Sent""").Show();
 
             return JsonConvert.DeserializeObject<ForecastDTO>(json);
         }

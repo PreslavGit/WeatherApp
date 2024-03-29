@@ -1,6 +1,9 @@
-﻿using System.ComponentModel;
+﻿using CommunityToolkit.Maui.Alerts;
+using System.ComponentModel;
 using System.Globalization;
 using System.Runtime.ConstrainedExecution;
+using System.Threading.Tasks;
+using WeatherApp.Caching;
 
 namespace WeatherApp
 {
@@ -28,6 +31,7 @@ namespace WeatherApp
         {
             InitializeComponent();
             BindingContext = this;
+            CacheService.InitDB();
 
             SearchBtnText = GEOLOC;
 
@@ -37,14 +41,26 @@ namespace WeatherApp
         private async void SearchButton_Clicked(object sender, EventArgs e)
         {
             CurrWeatherDTO weather;
-            if(SearchBtnText == GEOLOC)
+            if (SearchBtnText == GEOLOC)
             {
                 weather = await WeatherService.GetCurrWeatherCurrLocation();
                 Forecasts = ForecastsFromDTO(await WeatherService.GetForecastCurrLocation(), weather.Timezone);
-            } else
+            }
+            else
             {
                 weather = await WeatherService.GetCurrWeatherByCity(CityEntry);
-                Forecasts = ForecastsFromDTO(await WeatherService.GetForecastByCity(CityEntry), weather.Timezone);
+
+                var cachedForecast = CacheService.getCached(CityEntry);
+                if (cachedForecast == null)
+                {
+                    Forecasts = ForecastsFromDTO(await WeatherService.GetForecastByCity(CityEntry), weather.Timezone);
+                    CacheService.setCache(CityEntry, Forecasts);
+                }
+                else
+                {
+                    Forecasts = cachedForecast;
+                    Toast.Make($"""Cache hit for {CityEntry}""").Show();
+                }
             }
             FilteredForecasts = FilterForecasts(Forecasts, 0);
 
@@ -58,7 +74,7 @@ namespace WeatherApp
         }
         public void ForecastDaySelect(object sender, EventArgs e)
         {
-            if(sender is Button btn)
+            if (sender is Button btn)
             {
                 switch (btn.CommandParameter.ToString())
                 {
@@ -93,10 +109,11 @@ namespace WeatherApp
             if (sender is Entry entry)
             {
                 bool isEmpty = entry.Text.Length == 0;
-                if(isEmpty)
+                if (isEmpty)
                 {
                     SearchBtnText = GEOLOC;
-                } else
+                }
+                else
                 {
                     SearchBtnText = SEARCH_CITY;
                 }
@@ -157,8 +174,8 @@ namespace WeatherApp
         public string DisplayTime { get { return _time.ToString("HH:mm") + " ч."; } set { return; } }
 
         public double Temp { get { return _temp; } set { _temp = value; } }
-        public string DisplayTemp{ get { return _temp.ToString() + " C"; } set { return; } }
-        public Forecast(DateTime time, double temp) 
+        public string DisplayTemp { get { return _temp.ToString() + " C"; } set { return; } }
+        public Forecast(DateTime time, double temp)
         {
             Time = time;
             Temp = temp;

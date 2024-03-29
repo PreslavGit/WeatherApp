@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\code\\maui\\WeatherApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|d:\\code\\maui\\weatherapp\\weatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|D:\\code\\maui\\WeatherApp\\weatherapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|D:\\code\\maui\\WeatherApp\\weatherapp\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|D:\\code\\maui\\WeatherApp\\weatherapp\\forecastdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\forecastdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|d:\\code\\maui\\weatherapp\\weatherapp\\caching\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\caching\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|d:\\code\\maui\\weatherapp\\weatherapp\\caching\\cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\caching\\cache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|d:\\code\\maui\\weatherapp\\weatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4320FAA-D3BC-452F-B1D7-A5A01AEFEAD3}|WeatherApp\\WeatherApp.csproj|solutionrelative:weatherapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "CacheService.cs",
+              "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\Caching\\CacheService.cs",
+              "RelativeDocumentMoniker": "WeatherApp\\Caching\\CacheService.cs",
+              "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\Caching\\CacheService.cs",
+              "RelativeToolTip": "WeatherApp\\Caching\\CacheService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwFYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:11:09.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cache.cs",
+              "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\Caching\\Cache.cs",
+              "RelativeDocumentMoniker": "WeatherApp\\Caching\\Cache.cs",
+              "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\Caching\\Cache.cs",
+              "RelativeToolTip": "WeatherApp\\Caching\\Cache.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T08:10:37.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "WeatherApp\\MainPage.xaml.cs",
               "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\MainPage.xaml.cs",
               "RelativeToolTip": "WeatherApp\\MainPage.xaml.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAAC4AAABwAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAAA2wD0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T07:52:28.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\MainPage.xaml",
-              "RelativeDocumentMoniker": "WeatherApp\\MainPage.xaml",
-              "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\MainPage.xaml",
-              "RelativeToolTip": "WeatherApp\\MainPage.xaml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEYAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-22T07:47:24.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForecastDTO.cs",
-              "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\ForecastDTO.cs",
-              "RelativeDocumentMoniker": "WeatherApp\\ForecastDTO.cs",
-              "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\ForecastDTO.cs",
-              "RelativeToolTip": "WeatherApp\\ForecastDTO.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAA5wCsAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T15:40:28.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "WeatherService.cs",
               "DocumentMoniker": "D:\\code\\maui\\WeatherApp\\WeatherApp\\WeatherService.cs",
               "RelativeDocumentMoniker": "WeatherApp\\WeatherService.cs",
               "ToolTip": "D:\\code\\maui\\WeatherApp\\WeatherApp\\WeatherService.cs",
               "RelativeToolTip": "WeatherApp\\WeatherService.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAwwEoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-22T15:33:10.878Z",
               "EditorCaption": ""

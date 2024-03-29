@@ -35,9 +35,7 @@ D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x6
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Security.AccessControl.Projection.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
-D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
-D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Release.Net.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ar\Microsoft.Maui.Controls.resources.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ca\Microsoft.Maui.Controls.resources.dll
 D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\cs\Microsoft.Maui.Controls.resources.dll
@@ -175,3 +173,13 @@ D:\code\maui\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x6
 D:\code\maui\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\humidity.scale-100.png
 D:\code\maui\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sunrise.scale-100.png
 D:\code\maui\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\sunset.scale-100.png
+D:\code\maui\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\WeatherApp.sourcelink.json
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLite-net.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.batteries_v2.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Maui.Core.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Providers.Projection.dll
+D:\code\maui\WeatherApp\WeatherApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Speech.dll
